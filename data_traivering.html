@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array Structring</title>
+
+    <script>
+
+        let data = [3, 1, 45, 21, 34,   23, 8, 23, 55];
+        let arr = data.length;
+        // let x = 4;
+        // document.write(data[x])
+
+        const getElement = () => {
+
+        
+        let el = parseInt(document.getElementById('Element').value);
+        if(el < data.length && el >= 0 ){
+            alert(data[el])
+        }
+       else if(el < 0){
+        console.log(data[el]);
+            alert(data[arr+el])
+       }
+        else{
+        alert('Enter valid value')
+       }
+   
+    }
+        // const getElement = () => {
+        //     let el = document.getElementById('Element').value;
+
+
+        //   if (el < data.length && el > 0) {
+        //         alert(data[el])
+
+        //     }
+        //   if (el < 0) {
+        //         alert(data(el))
+        //     }
+        //     else {
+        //         alert('Enter the valid  data')
+        //     }
+         
+
+        // }
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <input type="text" id="Element" placeholder=" Usse me ">
+    <button onclick="getElement()">Click to Get Element</button>
+</body>
+
+</html>

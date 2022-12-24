@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<script>
+    
+    const removeEl = () =>{
+        let data = [23, 45, 54, 34, 56]; // remove ('54')
+        let position = document.getElementById('position').value;
+       position =  parseInt(position)
+        for (let i = position; i<data.length-1; i++) {
+        data[i] = data[i + 1] 
+        
+    }
+    data.length =  data.length -1
+    console.log(data);
+}
+</script>
+<body>
+    <input type="text" id="position">
+    <button onclick="removeEl()" >Remove </button>
+</body>
+</html>

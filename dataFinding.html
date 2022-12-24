@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <script>
+        const find = () => {
+
+
+            let data = [1, 2, 3, 9, 5, 6, 7, 8, 10]
+            let findEl = document.getElementById('findEl').value;
+            let index = undefined;
+            for (let i = 0; i < data.length; i++) {
+                if (findEl == data[i]) {
+                    index = i;
+                }
+
+            }
+            alert(index)
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="text" id="findEl" placeholder="Enter Element">
+    <button onclick="find()">Find element</button>
+</body>
+
+</html>

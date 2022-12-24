@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title> </title>
+    <script>
+
+        // let data = [30, 50, 60, 70, 80, 90];
+        // let position = 1;
+        // let newEl = 40;
+        // console.log(data);
+        // for (let i = data.length - 1; i >= 0; i--) {
+
+        //     if (i >= position) {
+        //         data[i + 1] = data[i];
+
+        //         if(i==position){
+        //             data[i]= newEl
+
+        //         }
+        //     }
+
+        // }
+        // console.warn(data);
+        const getEl = () => {
+            let data = ['Jan', 'Feb', 'March','may', 'June', 'July'];
+
+
+            let position = document.getElementById('position').value;
+            let newEl = document.getElementById('newEl').value;
+            for (let i = data.length - 1; i >= 0; i--) {
+                if (i >= position) {
+                    data[i + 1] = data[i]
+                    if (i == position) {
+                        data[i] = newEl;
+                    }
+                }
+
+            }
+            console.log(data);
+        }
+    </script>
+    <style>
+        * {
+            background-color: #2E122d;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="newEl" placeholder="Enter new element ">
+    <input type="text" id="position" placeholder="Enter position">
+    <button onclick="getEl()">Insert your Element</button>
+</body>
+
+</html>
